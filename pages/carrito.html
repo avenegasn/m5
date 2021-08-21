@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.87.0">
+    <title>Carrito - Lavanda</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../assets/dist/css/estilo-imagen.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="../carousel.css" rel="stylesheet">
+    <link href="../assets/form-validation.css" rel="stylesheet">
+  </head>
+
+
+  <body>
+
+    <!-- barra de navegación-->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="us.html">Lavanda</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalogo.html">Catálogo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="carrito.html">Carrito</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+
+      <!-- resto del cuerpo -->
+      <div class="container">
+
+        <!-- cabezera -->
+        <div class="py-5 text-center">
+          <img class="d-block mx-auto mb-4 rounded-circle" src="../assets/images/lavanda.jpg" alt="logo lavanda" width="57" height="57">
+          <h2>Carrito de Compra</h2>
+          <p class="lead">Completa tus datos de envío y revisa que tu pedido esté ok</p>
+        </div>
+
+        <!-- resumen compra -->
+        <div class="row g-5">
+          <div class="col-md-5 col-lg-4 order-md-last">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+              <span class="text-dark">Resumen de Compra</span>
+              <span class="badge bg-dark rounded-pill">3</span>
+            </h4>
+            <ul class="list-group mb-3">
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Jabón Lavanda</h6>
+                  <small class="text-muted">Lavanda Hidratante</small>
+                </div>
+                <span class="text-muted">$3500</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Jabón Avena Miel</h6>
+                  <small class="text-muted">Hidratación profunda</small>
+                </div>
+                <span class="text-muted">$5000</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Jabón Hipoalergénico</h6>
+                  <small class="text-muted">Sin colorantes ni perfumes</small>
+                </div>
+                <span class="text-muted">$5500</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between bg-light">
+                <div class="text-success">
+                  <h6 class="my-0">10% Promo</h6>
+                  <small>COMPRACODE10</small>
+                </div>
+                <span class="text-success">1400</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Total (CLP)</span>
+                <strong>$12600</strong>
+              </li>
+            </ul>
+            <form class="card p-2">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Código Promocional">
+                <button type="submit" class="btn btn-secondary">Ingresar</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- info despacho -->
+          <div class="col-md-7 col-lg-8">
+            <h4 class="mb-3">Dirección de Despacho</h4>
+            <form class="needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                  <div class="invalid-feedback">Se requiere un primer nombre válido</div>
+                </div>
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">Apellidos</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                  <div class="invalid-feedback">Se requieren apellidos válidos</div>
+                </div>
+                <div class="col-12">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="tuemail@ejemplo.com">
+                  <div class="invalid-feedback">Por favor ingresa un email válido para enviarte información de la compra.</div>
+                </div>
+                <div class="col-12">
+                  <label for="address" class="form-label">Dirección</label>
+                  <input type="text" class="form-control" id="address" placeholder="1234 Calle" required>
+                  <div class="invalid-feedback">Por Favor Agrega tu dirección de despacho.</div>
+                </div>
+                <div class="col-12">
+                  <label for="address2" class="form-label">Dirección Adicional <span class="text-muted">(Optional)</span></label>
+                  <input type="text" class="form-control" id="address2" placeholder="Departamento o indicaciones">
+                </div>
+                <div class="col-md-5">
+                  <label for="country" class="form-label">Comuna</label>
+                  <select class="form-select" id="country" required>
+                    <option value="">Elige...</option>
+                    <option>Arica y Parinacota</option>
+                    <option>Tarapacá</option>
+                    <option>Antofagasta</option>
+                    <option>Atacama</option>
+                    <option>Coquimbo</option>
+                    <option>Valparaíso</option>
+                    <option>Metropolitana</option>
+                    <option>Libertador General Bernado O'Higgins</option>
+                    <option>Maule</option>
+                    <option>Ñuble</option>
+                    <option>Biobio</option>
+                    <option>Araucanía</option>
+                    <option>Los Ríos</option>
+                    <option>Los Lagos</option>
+                    <option>Aysén del General Carlos Ibáñez del Campo</option>
+                    <option>Magallanes y la Antártica Chilena</option>
+                  </select>
+                  <div class="invalid-feedback">Por favor elige tu región.</div>
+                </div>
+                <div class="col-md-3">
+                  <label for="zip" class="form-label">Código Postal</label>
+                  <input type="text" class="form-control" id="zip" placeholder="" required>
+                  <div class="invalid-feedback">Se requiere Código Postal</div>
+                </div>
+              </div>
+              <hr class="my-4">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="same-address">
+                <label class="form-check-label" for="same-address">La dirección de despacho es la misma que la de facturación.</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="save-info">
+                <label class="form-check-label" for="save-info">Guardar esta información para una próxima compra</label>
+              </div>
+
+              <!-- forma de pago -->
+              <hr class="my-4">
+              <h4 class="mb-3">Medios de Pago</h4>
+              <div class="my-3">
+                <div class="form-check">
+                  <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                  <label class="form-check-label" for="credit">Tarjeta de Crédito</label>
+                </div>
+                <div class="form-check">
+                  <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="debit">Tarjeta de Débito</label>
+                </div>
+                <div class="form-check">
+                  <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="paypal">PayPal</label>
+                </div>
+              </div>
+              <hr class="my-4">
+              <button class="w-100 btn btn-dark btn-lg" type="submit">Continuar con el Pago</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-end"><a href="#">Volver Arriba</a></p>
+      <p>&copy; 2005–2021 Lavanda Ltda. &middot; <a href="#">Privacidad</a> &middot; <a href="#">Términos</a></p>
+    </footer>
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/form-validation.js"></script>
+  </body>
+</html>
